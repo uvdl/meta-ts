@@ -1,23 +1,19 @@
 # Adapted from linux-imx.inc, copyright (C) 2012, 2013 O.S. Systems Software LTDA
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-SUMMARY = "Linux kernel for TS-4900"
+SUMMARY = "Linux kernel for Technologic Systems boards"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 require recipes-kernel/linux/linux-imx.inc
 
-# Put a local version until we have a true SRCREV to point to
-LOCALVERSION ?= "+yocto"
-SCMVERSION ?= "y"
+LINUX_VERSION_ts7180 = "4.9.280"
+LINUX_VERSION_ts4900 = "3.10.17"
 
-SRCBRANCH ??= "master"
+SRCBRANCH_ts7180 = "v4.9.280.ts"
+SRCBRANCH_ts4900 = "master"
 
-# Allow override of TECHNOLOGIC_GITHUB_MIRROR to make use of
-# local repository easier
-TECHNOLOGIC_GITHUB_MIRROR ?= "git://github.com/embeddedarm/linux-3.10.17-imx6.git"
+SRCREV_ts7180 = "fcc71412f6ab82308b4cacb77e5053796c41bb4e"
 
-# SRC_URI for ts kernel
-SRC_URI = "${TECHNOLOGIC_GITHUB_MIRROR};branch=${SRCBRANCH} \
-           file://defconfig \
-"
+KERNEL_SRC_ts7180 = "git://github.com/embeddedarm/linux-4.9.y.git;protocol=git"
+KERNEL_SRC_ts4900 = "git://github.com/embeddedarm/linux-3.10.17-imx6.git;protocol=git"
