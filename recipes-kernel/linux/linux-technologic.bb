@@ -7,6 +7,7 @@ It includes support for many IPs such as GPU, VPU and IPU."
 
 include linux-technologic.inc
 require recipes-kernel/linux/linux-dtb.inc
+require recipes-kernel/linux/linux-imx.inc
 
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"

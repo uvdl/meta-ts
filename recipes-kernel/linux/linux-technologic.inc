@@ -5,8 +5,6 @@ SUMMARY = "Linux kernel for Technologic Systems boards"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-require recipes-kernel/linux/linux-imx.inc
-
 LINUX_VERSION_ts7180 = "4.9.280"
 LINUX_VERSION_ts4900 = "3.10.17"
 
