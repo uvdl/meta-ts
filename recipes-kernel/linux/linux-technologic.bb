@@ -16,6 +16,7 @@ DEPENDS += "lzop-native bc-native"
 LOCALVERSION_ts4900 = "-ts_4900"
 LOCALVERSION_ts7180 = "-ts_7180"
 
-SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
+SRC_URI_ts4900 = "${KERNEL_SRC_ts4900};branch=${SRCBRANCH_ts4900}"
+SRC_URI_ts7180 = "${KERNEL_SRC_ts7180};branch=${SRCBRANCH_ts7180}"
 
 COMPATIBLE_MACHINE = "(ts4900|ts7180)"
