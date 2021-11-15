@@ -6,7 +6,6 @@ DESCRIPTION = "Linux kernel provided and supported by Technologic Systems (based
 It includes support for many IPs such as GPU, VPU and IPU."
 
 include linux-technologic.inc
-require recipes-kernel/linux/linux-dtb.inc
 require recipes-kernel/linux/linux-imx.inc
 
 LICENSE = "GPLv2"
