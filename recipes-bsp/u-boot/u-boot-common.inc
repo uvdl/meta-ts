@@ -5,10 +5,6 @@ DEPENDS += "bison-native"
 
 UBOOT_SRC ?= "git://github.com/embeddedarm/u-boot-imx.git;protocol=git"
 
-SRCBRANCH_ts7180 = "tsimx_v2016.03_4.1.15_2.0.0_ga"
-SRCREV_ts7180 = "b4662ed63eca8162e3709b96d54191b298a9e711"
+SRCBRANCH = "tsimx_v2016.03_4.1.15_2.0.0_ga"
+SRCREV = "b4662ed63eca8162e3709b96d54191b298a9e711"
 UBOOT_INITIAL_ENV_DEVICE_7180 = "sd"
-
-SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
-
-S = "${WORKDIR}/git"
