@@ -17,6 +17,8 @@ DEPENDS += "lzop-native bc-native"
 LOCALVERSION = "-ts_7180"
 
 # SRC_URI_ts4900 = "${KERNEL_SRC_ts4900};branch=${SRCBRANCH_ts4900}"
-SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
+SRC_URI = "${KERNEL_SRC};tag=${PV}"
+
+KBUILD_DEFCONFIG = "tsimx6ul_defconfig"
 
 COMPATIBLE_MACHINE = "(ts4900|ts7180)"
