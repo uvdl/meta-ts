@@ -16,3 +16,7 @@ KERNEL_IMAGETYPE = "uImage"
 KERNEL_DEVICETREE = "imx6ul-ts7180.dtb"
 IMAGE_INSTALL += " kernel-devicetree"
 IMAGE_FSTYPES += "tar.gz"
+
+SPL_BINARY = "SPL"
+UBOOT_SUFFIX = "img"
+UBOOT_CONFIG = "ts7180_defconfig"
