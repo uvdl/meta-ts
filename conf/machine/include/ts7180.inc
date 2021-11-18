@@ -5,10 +5,8 @@ MACHINE_FEATURES += " pci wifi"
 
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-technologic"
 PREFERRED_VERSION_linux-technologic ?= "4.9.280"
-PREFERRED_PROVIDER_u-boot = "u-boot"
-PREFERRED_VERSION_u-boot = "v2016.03"
-PREFERRED_PROVIDER_virtual/bootloader = "u-boot"
-PREFERRED_VERSION_virtual/bootloader = "v2016.03"
+PREFERRED_PROVIDER_u-boot = "u-boot-ts"
+PREFERRED_PROVIDER_virtual/bootloader = "u-boot-ts"
 
 SERIAL_CONSOLE = "115200 ttymxc0"
 
@@ -25,6 +23,6 @@ IMAGE_FSTYPES += "tar.gz"
 # UBOOT_SUFFIX = "bin"
 UBOOT_CONFIG = "ts7180_defconfig"
 
-IMAGE_BOOT_FILES = " \
-    u-boot.${UBOOT_SUFFIX} \
-"
+# IMAGE_BOOT_FILES = " \
+#     u-boot.${UBOOT_SUFFIX} \
+# "
