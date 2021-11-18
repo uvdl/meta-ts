@@ -6,7 +6,9 @@ MACHINE_FEATURES += " pci wifi"
 PREFERRED_PROVIDER_virtual/kernel ?= "linux-technologic"
 PREFERRED_VERSION_linux-technologic ?= "4.9.280"
 PREFERRED_PROVIDER_u-boot = "u-boot"
+PREFERRED_VERSION_u-boot = "v2016.03"
 PREFERRED_PROVIDER_virtual/bootloader = "u-boot"
+PREFERRED_VERSION_virtual/bootloader = "v2016.03"
 
 SERIAL_CONSOLE = "115200 ttymxc0"
 
