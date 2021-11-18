@@ -21,7 +21,7 @@ IMAGE_FSTYPES += "tar.gz"
 # UBOOT_MAKE_TARGET = ""
 # SPL_BINARY = "SPL"
 # UBOOT_SUFFIX = "bin"
-UBOOT_CONFIG = "ts7180_defconfig"
+UBOOT_MACHINE = "ts7180_defconfig"
 
 # IMAGE_BOOT_FILES = " \
 #     u-boot.${UBOOT_SUFFIX} \

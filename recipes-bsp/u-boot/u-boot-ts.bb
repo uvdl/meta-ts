@@ -3,7 +3,7 @@ SUMMARY = "U-Boot for Technologic Systems TS-7180"
 require recipes-bsp/u-boot/u-boot.inc
 
 PROVIDES += "u-boot"
-DEPENDS += "bc-native dtc-native"
+DEPENDS += "bison-native bc-native dtc-native"
 
 include u-boot-common.inc
 #inherit fsl-u-boot-localversion
