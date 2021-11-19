@@ -18,6 +18,5 @@ KERNEL_DEVICETREE = "imx6ul-ts7180.dtb"
 IMAGE_INSTALL += " kernel-devicetree"
 IMAGE_FSTYPES += "tar.gz"
 
-UBOOT_MACHINE = "ts7180_defconfig"
 UBOOT_CONFIG = "sd"
 UBOOT_CONFIG[sd] = "ts7180_defconfig,sdcard"
