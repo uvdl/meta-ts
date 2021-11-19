@@ -12,7 +12,7 @@ SERIAL_CONSOLE = "115200 ttymxc0"
 
 MACHINE_FEATURES += "bluetooth wifi"
 
-KERNEL_IMAGETYPE = "uImage"
+KERNEL_IMAGETYPE = "zImage"
 KERNEL_DEVICETREE = "imx6ul-ts7180.dtb"
 
 IMAGE_INSTALL += " kernel-devicetree"
