@@ -10,8 +10,6 @@ PREFERRED_PROVIDER_virtual/bootloader = "u-boot-ts"
 
 SERIAL_CONSOLE = "115200 ttymxc0"
 
-MACHINE_FEATURES += "bluetooth wifi"
-
 KERNEL_IMAGETYPE = "zImage"
 KERNEL_DEVICETREE = "imx6ul-ts7180.dtb"
 
