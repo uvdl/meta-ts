@@ -13,7 +13,7 @@ SERIAL_CONSOLE = "115200 ttymxc0"
 KERNEL_IMAGETYPE = "zImage"
 KERNEL_DEVICETREE = "imx6ul-ts7180.dtb"
 
-IMAGE_INSTALL += " kernel-devicetree"
+IMAGE_INSTALL += " ts7180-utils kernel-devicetree"
 IMAGE_FSTYPES += "tar.gz"
 
 UBOOT_CONFIG = "sd"
