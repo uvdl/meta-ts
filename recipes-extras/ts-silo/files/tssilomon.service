@@ -1,0 +1,9 @@
+[Unit]
+Description=TS-SILO SuperCap Monitor Daemon
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/local/bin/tssilomon
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+#!/bin/bash -e
+RESET_PCT=90
+silabs scaps
+if [ $? != 1 ]; then
+        echo "Supercaps disabled"
+        exit 0;
+fi
+while true; do
+        gpiomon -n 1 -s 4 0
+        POWER_FAIL=1
+        while [ "$POWER_FAIL" = "1" ]; do
+                silabs scaps pct "$RESET_PCT"
+                if [ $? != 1 ]; then
+                        reboot
+                fi
+                POWER_FAIL=$(gpioget 4 0)
+                sleep 1
+        done
+done
