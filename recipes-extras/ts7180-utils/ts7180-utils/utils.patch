@@ -1,0 +1,12 @@
+diff --git a/src/Makefile.am b/src/Makefile.am
+index bca67ee..23a70d3 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -8,4 +8,5 @@ silabs_SOURCES = silabs.c
+ 
+ get_opt_SOURCES = get-opt.c fpga.c
+ 
+-bin_PROGRAMS = tshwctl load_fpga silabs get-opt
++bin_PROGRAMS = load_fpga get-opt
++noinst_PROGRAMS = tshwctl silabs
+\ No newline at end of file
