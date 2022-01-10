@@ -7,7 +7,7 @@ SECTION = "base"
 LICENSE = "CLOSED"
 DEPENDS = "libgpiod"
 
-FILESEXTRAPATHS_prepend := "${THISDIR}:"
+FILESEXTRAPATH_prepend := "${THISDIR}/${PN}:"
 
 SRC_URI = "git://github.com/embeddedarm/ts7180-utils.git;branch=master \
     file://utils.patch \
@@ -23,6 +23,6 @@ do_install_append() {
     mkdir -p ${D}/usr/local/bin
     install -d ${D}/usr/local/bin
 
-    cp -rf ${S}/src/tshwctl ${D}/usr/local/bin/tshwctl
-    cp -rf ${S}/src/silabs ${D}/usr/local/bin/silabs
+    install -m 0755 ${S}../build/src/tshwctl ${D}/usr/local/bin/tshwctl
+    install -m 0755 ${S}../build/src/silabs ${D}/usr/local/bin/silabs
 }
