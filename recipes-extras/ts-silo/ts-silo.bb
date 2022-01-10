@@ -16,7 +16,7 @@ FILES_${PN} += " \
 "
 
 FILES_${PN} += " \
-    /usr/local/bin/tssilomon
+    /usr/local/bin/tssilomon \
 "
 
 do_install() {
