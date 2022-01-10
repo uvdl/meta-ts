@@ -17,6 +17,11 @@ SRCREV = "f4827ab4a3f3c1f5f555de57af05168300892bb3"
 
 S = "${WORKDIR}/git"
 
+FILES_${PN} += " \
+    /usr/local/bin/tshwctl \
+    /usr/local/bin/silabs \
+"
+
 inherit autotools
 
 # Stock image has these two bins in usr/local/bin, this just matches that
