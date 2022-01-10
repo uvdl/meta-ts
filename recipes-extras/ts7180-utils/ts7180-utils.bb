@@ -19,6 +19,7 @@ S = "${WORKDIR}/git"
 
 inherit autotools
 
+# Stock image has these two bins in usr/local/bin, this just matches that
 do_install_append() {
     mkdir -p ${D}/usr/local/bin
     install -d ${D}/usr/local/bin
