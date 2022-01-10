@@ -24,6 +24,6 @@ do_install_append() {
     mkdir -p ${D}/usr/local/bin
     install -d ${D}/usr/local/bin
 
-    install -m 0755 ${S}../build/src/tshwctl ${D}/usr/local/bin/tshwctl
-    install -m 0755 ${S}../build/src/silabs ${D}/usr/local/bin/silabs
+    install -m 0755 ${S}/../build/src/tshwctl ${D}/usr/local/bin/tshwctl
+    install -m 0755 ${S}/../build/src/silabs ${D}/usr/local/bin/silabs
 }
