@@ -23,7 +23,7 @@ do_install() {
     mkdir -p ${D}/usr/local/bin
     install -d ${D}/usr/local/bin
 
-    cp -rf ${S}/tssilomon ${D}/usr/local/bin/tssilomon
+    install -m 0755 ${S}/tssilomon ${D}/usr/local/bin/tssilomon
 
     if ${@bb.utils.contains('DISTRO_FEATURES','systemd','true','false',d)}; then
         install -d ${D}${systemd_unitdir}/system
