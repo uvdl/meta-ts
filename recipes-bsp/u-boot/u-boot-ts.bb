@@ -7,7 +7,7 @@ DEPENDS += "bison-native bc-native dtc-native"
 
 include u-boot-common.inc
 
-SRC_URI += "${UBOOT_SRC};branch=${SRCBRANCH} \
+SRC_URI += "${UBOOT_SRC} \
     file://fw_env.config \
 "
 
