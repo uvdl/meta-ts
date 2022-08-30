@@ -15,3 +15,5 @@ KERNEL_DEVICETREE = "imx6ul-ts7553v2.dtb"
 
 IMAGE_INSTALL += " ts7553v2-utils kernel-devicetree"
 IMAGE_FSTYPES += "tar.gz"
+
+UBOOT_CONFIG = "sd"
