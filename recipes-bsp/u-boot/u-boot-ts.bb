@@ -11,4 +11,4 @@ SRC_URI += "${UBOOT_SRC};branch=${SRCBRANCH} \
     file://fw_env.config \
 "
 
-COMPATIBLE_MACHINE = "(ts7180)"
+COMPATIBLE_MACHINE = "(ts7180|ts7553v2)"

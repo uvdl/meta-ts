@@ -11,7 +11,7 @@ PREFERRED_PROVIDER_virtual/bootloader = "u-boot-ts"
 SERIAL_CONSOLE = "115200 ttymxc0"
 
 KERNEL_IMAGETYPE = "zImage"
-KERNEL_DEVICETREE = "imx6ul-ts7553v2.dts"
+KERNEL_DEVICETREE = "imx6ul-ts7553v2.dtb"
 
 IMAGE_INSTALL += " ts7553v2-utils kernel-devicetree"
 IMAGE_FSTYPES += "tar.gz"
