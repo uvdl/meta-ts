@@ -13,8 +13,9 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 DEPENDS += "lzop-native bc-native"
 
-LOCALVERSION_append_ts7180 = "-ts_7180"
-LOCALVERSION_append_ts7553v2 = "-ts_7553v2"
+# LOCALVERSION_append_ts7180 = "-ts_7180"
+# LOCALVERSION_append_ts7553v2 = "-ts_7553v2"
+LOCALVERSION = "-tsimx6ul"
 
 SRC_URI = "${KERNEL_SRC}"
 
