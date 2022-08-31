@@ -9,7 +9,9 @@ DEPENDS = "libgpiod cairo"
 
 FILESEXTRAPATH_prepend := "${THISDIR}/${PN}:"
 
-SRC_URI = "git://github.com/embeddedarm/ts7553v2-utils.git;branch=master "
+SRC_URI = "git://github.com/embeddedarm/ts7553v2-utils.git;branch=master \
+    file://ts7553v2.patch \
+"
 
 SRCREV = "975eebed26d0fa507db9a0c5e2735434985f8d70"
 
