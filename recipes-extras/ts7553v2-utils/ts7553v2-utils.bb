@@ -11,7 +11,7 @@ FILESEXTRAPATH_prepend := "${THISDIR}/${PN}:"
 
 SRC_URI = "git://github.com/embeddedarm/ts7553v2-utils.git;branch=master "
 
-#SRCREV = "f4827ab4a3f3c1f5f555de57af05168300892bb3"
+SRCREV = "975eebed26d0fa507db9a0c5e2735434985f8d70"
 
 S = "${WORKDIR}/git"
 
