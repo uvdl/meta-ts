@@ -5,7 +5,7 @@ HOMEPAGE = "http://www.embeddedarm.com/"
 SECTION = "base"
 
 LICENSE = "CLOSED"
-DEPENDS = "libgpiod"
+DEPENDS = "libgpiod cairo"
 
 FILESEXTRAPATH_prepend := "${THISDIR}/${PN}:"
 
