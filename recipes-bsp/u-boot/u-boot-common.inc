@@ -8,7 +8,6 @@ UBOOT_SRC_append_ts7180 ?= " \
     file://fw_env.config \    
 "
 UBOOT_SRC_append_ts7553v2 ?= " \
-    git://github.com/embeddedarm/u-boot-imx.git;protocol=git;branch=imx_v2016.03_4.1.15_2.0 \
     file://u-boot.imx \    
 "
 
