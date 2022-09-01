@@ -17,3 +17,4 @@ IMAGE_INSTALL += " ts7553v2-utils kernel-devicetree"
 IMAGE_FSTYPES += "tar.gz"
 
 UBOOT_CONFIG = "sd"
+UBOOT_CONFIG[sd] = "sdcard"
