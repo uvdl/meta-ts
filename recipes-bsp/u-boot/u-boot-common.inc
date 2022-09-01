@@ -8,7 +8,8 @@ UBOOT_SRC_append_ts7180 ?= " \
     file://fw_env.config \    
 "
 UBOOT_SRC_append_ts7553v2 ?= " \
-    file://u-boot.imx \    
+    file://u-boot.imx \ 
+    file://fw_env.config \   
 "
 
 S = "${WORKDIR}/git"
