@@ -9,8 +9,4 @@ include u-boot-common.inc
 
 SRC_URI += "${UBOOT_SRC}"
 
-do_install_append_ts7553v2(){
-    cp -f $S/../u-boot.imx $S/../../../../deploy/images/ts7553v2/
-}
-
 COMPATIBLE_MACHINE = "(ts7180|ts7553v2)"
